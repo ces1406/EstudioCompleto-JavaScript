@@ -7,18 +7,21 @@ var cadena0="";
 var cadena1 = "esto es una cadena de texto entero";
 var cadena2="❤";
 var cadena3 = "esto es una cadena de texto\n\"A";
-var cadena4="\0";
-console.log('cadena0: ',cadena0);
+var cadena4="\0"; //caracter "vacío"
+var cadena5=null;
+console.log('cadena0:'+cadena0+'<-nada (y cadena0.length da 0)');
 console.log('cadena1: ',cadena1);
 console.log('cadena2: ',cadena2);
 console.log('cadena3: ',cadena3);
-console.log('cadena4: ',cadena4);
+console.log('cadena4:'+cadena4+'<-nada (pero cadena4.length da 1?)');
+console.log('cadena5:'+cadena5+'<-no es "nada" o "string vacío", es "null" (y no entonces no puede accederse a cadena5.length)');
 console.log('cadena0.length: ',cadena0.length);
 console.log('cadena1.length: ',cadena1.length);
 console.log('cadena2.length: ',cadena2.length, ' (par subrrogado?)');
 console.log('cadena3.length: ',cadena3.length, '(el enter:/n como las comillas escapadas:/" cuentan como un solo caracter)');
 console.log('cadena4.length: ',cadena4.length);
-console.log('-----------------------------METODOS--------------------------------------')
+//console.log('cadena5.length: ',cadena5.length); DA ERROR: "no se pueden leer propiedades de un NULL"
+console.log("\x1b[32m%s\x1b[0m",'-----------------------------METODOS--------------------------------------')
 console.log('--strings son inmutables (son primitivas) => métodos como replace() o toUpperCase() devuelven nuevos strings-')
 console.log('cadena1.concat(" completa")= ',cadena1.concat(" completa"));
 console.log('cadena1.indexOf("o") = ',cadena1.indexOf("o"));
