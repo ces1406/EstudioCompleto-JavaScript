@@ -5,7 +5,7 @@
  */
 var cadena0="";
 var cadena1 = "esto es una cadena de texto entero";
-var cadena2="❤";
+var cadena2="a❤b";
 var cadena3 = "esto es una cadena de texto\n\"A";
 var cadena4="\0"; //caracter "vacío"
 var cadena5=null;
@@ -18,6 +18,10 @@ console.log('cadena5:'+cadena5+'<-no es "nada" o "string vacío", es "null" (y n
 console.log('cadena0.length: ',cadena0.length);
 console.log('cadena1.length: ',cadena1.length);
 console.log('cadena2.length: ',cadena2.length, ' (par subrrogado?)');
+let a = 15
+console.log('15.toString(16): ',a.toString(16));
+console.log('cadena2.codePointAt(0): ',cadena2.codePointAt(0),'cadena2.codePointAt(1): ',cadena2.codePointAt(1),' cadena2.codePointAt(2): ',cadena2.codePointAt(2));
+console.log('"ab☺de".length:',"ab☺de".length,' (par subrrogado? - según los libros tendría que dar ->6<-)');
 console.log('cadena3.length: ',cadena3.length, '(el enter:/n como las comillas escapadas:/" cuentan como un solo caracter)');
 console.log('cadena4.length: ',cadena4.length);
 //console.log('cadena5.length: ',cadena5.length); DA ERROR: "no se pueden leer propiedades de un NULL"

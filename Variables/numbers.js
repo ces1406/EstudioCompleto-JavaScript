@@ -27,7 +27,7 @@ console.log("\x1b[32m%s\x1b[0m", '----------------------------------------------
 var o1 = 071;
 console.log('octales: console.log(071) =',o1,' (lo muestra en sistema decimal)');
 console.log('hexadecimales: console.log(0xA) =',0xA,' (lo muestra en sistema decimal)');
-console.log('binarios: console.log(01101) =',0b0101,' (lo muestra en sistema decimal)');
+console.log('binarios: console.log(0b0101) =',0b0101,' (lo muestra en sistema decimal)');
 
 console.log("\x1b[32m%s\x1b[0m", '-------------------------------------------------------------------');
 console.log('5/0 =',5/0);
@@ -43,6 +43,9 @@ console.log('Math.floor(5.99) =',Math.floor(5.99));
 console.log('Math.abs(-2.99) =',Math.abs(-2.99));
 console.log('Math.max(5.9,9,1,55,26,87,977) =',Math.max(5.9,9,1,55,26,87,977));
 console.log('Math.min(5.9,9,1,55,26,87,977) =',Math.min(5.9,9,1,55,26,87,977));
+let v =[5.9,9,1,55,26,87,977,-5]
+console.log('Math.min(...vec) =',Math.min(...v));
+console.log('Math.random() =',Math.random(),' (un nro entre 0 y 1');
 console.log('Math.sin(90) =',Math.sin(90));
 console.log('Math.log(10) =',Math.log(10),' log natural');
 console.log('Math.cbrt(27)=',Math.cbrt(27),' raiz cubica') // => 3: cube root

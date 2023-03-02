@@ -41,7 +41,7 @@ console.log('v0=',v0);
 v0=10;
 console.log('let v0= a444[0]\nv0=10\na444=',JSON.stringify(a444));
 console.log('v0=',v0);
-console.log("\x1b[32m%s\x1b[0m", '-------------------------------------------------------------------');
+console.log("\x1b[32m%s\x1b[0m", '---------------------- FROM STRINGS ----------------------------');
 console.log('spread es aplicable a iterables y los strings son iterables => string a array:');
 let vecString=[..."hola querido mundo 122"];
 console.log('let vecString=[..."hola querido mundo 122"]');
