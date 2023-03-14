@@ -18,6 +18,10 @@ console.log('a2.length= 10');
 a2.length=10;
 console.log('a2.length=',a2.length);
 console.log('a2=',a2);
+let a2null = (a2[1]==null)?'es null':'no es null';
+let a2undef = (a2[1]==null)?'es undefined':'no es undefined';
+console.log('a2[1]==null?: ',a2null);
+console.log('a2[1]==undefined?: ',a2undef);
 console.log("\x1b[32m%s\x1b[0m", '-------------------------------------------------------------------');
 console.log('a3[20]=2',a3[20]=2);
 console.log('a3.length=',a3.length);
@@ -46,6 +50,10 @@ console.log('spread es aplicable a iterables y los strings son iterables => stri
 let vecString=[..."hola querido mundo 122"];
 console.log('let vecString=[..."hola querido mundo 122"]');
 console.log('vecString=',JSON.stringify(vecString));
+let vecStrnull = (vecString[4]==null)?'es null':'no es null';
+let vecStrVacio = (vecString[4]==" ")?'es vacio:" "':'no es vacio:" "';
+console.log('es vecString[4] null?----',vecStrnull);
+console.log('es vecString[4] " " ?----',vecStrVacio);
 console.log("\x1b[32m%s\x1b[0m", '-------------------------------------------------------------------');
 console.log('Array.from() toma como argumento un iterable y los strings son iterables => :');
 let vecString1=Array.from("hola querido mundo 122");
@@ -71,6 +79,7 @@ console.log("\x1b[32m%s\x1b[0m", '---------------------------- FOR OF ----------
 for([i,item] of a4.entries()){
     console.log('item('+i+')',item)
 }
+console.log('a4.entries(): ',a4.entries())
 
 console.log("\x1b[32m%s\x1b[0m", '---------------------------- FOREACH ------------------------------');
 a4.forEach((e,i,arr)=>{
@@ -123,9 +132,10 @@ console.log('let array = a4.slice(inicio,fin): ',JSON.stringify(vec6), 'nota: in
 let vec7 = a4.slice();
 console.log('let array = a4.slice("vacio"): ',JSON.stringify(vec7));
 console.log("\x1b[32m%s\x1b[0m", '---------------------------- SPLICE --------------------------------');
+console.log('a4 : ',JSON.stringify(a4));
 let vec8 = a4.splice(3,2,"elemento agregado 1",2,false,{x:4,y:8});
 console.log('let elementosSacados = a4.splice(): ',JSON.stringify(vec8));
-console.log('a4.splice(...): ',JSON.stringify(a4));
+console.log('a4.splice(3,2,"elemento agregado 1",2,false,{x:4,y:8}): ',JSON.stringify(a4));
 console.log("\x1b[32m%s\x1b[0m", '------------------------------ FILL --------------------------------');
 console.log('a2: ',JSON.stringify(a2));
 console.log('a2.fill(5)');

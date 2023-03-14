@@ -20,24 +20,12 @@ function funcRetorna (x){
     }
 }
 
-/*PRUEBA DE PARAMETROS */
-function adornar(ad,pal,...resto){
-    var extra ='';
-    console.log('\tparametros-> ',arguments);
-    console.log('\targuments[0]: ',arguments[0]);
-    resto.forEach(e => { extra +=e+' '   });
-    return '->'+ad+' '+pal+' '+extra+' '+ad+'<-'
-}
-
 console.log(doble0(33.25));
 console.log(doble1(7.14));
 console.log(sumatoria1(4));
 console.log(sumatoria2(4));
 
 const f1 = funcRetorna('pepin');
-
-//console.log(adornar('***','CESAR','kachu','tito','micho'));
-//console.log(adornar('***'));
 
 const inicia = ()=>{setInterval(f1,1000);}
 inicia();
