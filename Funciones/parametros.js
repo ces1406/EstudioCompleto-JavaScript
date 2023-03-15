@@ -30,7 +30,7 @@ console.log('v0:',v0)
 
 console.log("\x1b[32m%s\x1b[0m", '--------------------------/* IIFE */-----------------------------');
 console.log("\x1b[36m%s\x1b[0m", 'Construccion de objetos con variables privadas usando IIEF (inmediatly invoked function expression)')
-var Persona1 = (function () { //Persona1 termina siendo un constructor (?:un constructor no podria pisarse)
+var Persona1 = (function () { 
     // variables locales a la funcion para que sean privadas para el constructor
     var nombre = 'sin Nombre';
     var domicilio = {};
