@@ -1,6 +1,7 @@
-// Encadenamiento de promesas (en los ejemplos anteriores también se ve el encadenamiento de promesas)
+// -------------------------ENCADENAMIENTO DE PROMESAS---------------------------------
+//     (en los ejemplos anteriores también se ve el encadenamiento de promesas)
 
-// Definicion de las promesas (la segunda en base a una funcion que devuelve una promesa):
+
 const promesa1 = () => {
     return new Promise((res, rej) => {
         const num = Math.floor((Math.random() * 10) + 1);
@@ -28,7 +29,6 @@ function funcPromesa2(num) {
         }
     });
 }
-
 const funcPromesa3 = (num0) => {
     return new Promise((res, rej) => {
         console.log('promesa3 -> llega el parametro num0 = ' + num0);
@@ -43,10 +43,17 @@ const funcPromesa3 = (num0) => {
         }
     });
 }
-module.exports = { prom1: promesa1, prom3: funcPromesa3, funprom2: funcPromesa2 }
+const promesa4 = new Promise((funResolve,funReject)=>{
+    console.log('promesa 4');
+    funResolve('resolucion de promesa4')
+});
 
 // Encadenamiento efectivo de las promesas:
- promesa1()
+ //promesa1()
+promesa4
     .then(funcPromesa2)
-    .then(promesa3)
+    .then(funcPromesa3)
     .catch(err=>console.log('salto el error: '+err)); 
+
+    
+module.exports = { prom1: promesa1, prom3: funcPromesa3, funprom2: funcPromesa2 }
