@@ -1,5 +1,9 @@
 /*DECLARACION DE FUNCION */
-function doble0(x){ return 2*x; }
+console.log(doble0(33.25)); // Declaración tardía
+console.log(doble0()); // Declaración tardía
+function doble0(x=1){  // parametro por default 
+    return 2*x; 
+}
 
 /*EXPRESION FUNCION */
 var doble1 = function(x){ return 2*x; }
@@ -20,7 +24,6 @@ function funcRetorna (x){
     }
 }
 
-console.log(doble0(33.25));
 console.log(doble1(7.14));
 console.log(sumatoria1(4));
 console.log(sumatoria2(4));
