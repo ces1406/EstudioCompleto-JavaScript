@@ -14,6 +14,7 @@ function f1(){
     }
 }
 f1();
+//console.log('varB fuera de f1?->'+varB)-> tira error
 
 // variables en bucles for:
 //1. "v" forma parte del scope del for:
