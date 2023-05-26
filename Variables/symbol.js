@@ -46,3 +46,5 @@ console.log(Object.keys(persona)); /*
                                         eso si hicieramos:  " persona.estaLoggeado='si'; " no se produce una
                                         colisión de atributos
                                     */
+console.log('persona[estaLoggeado]: ',persona[estaLoggeado]);
+console.log('persona.estaLoggeado : ',persona.estaLoggeado);
