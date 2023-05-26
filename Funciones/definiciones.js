@@ -1,5 +1,9 @@
 /*DECLARACION DE FUNCION */
-function doble0(x){ return 2*x; }
+console.log(doble0(33.25)); // Declaración tardía
+console.log(doble0()); // Declaración tardía
+function doble0(x=1){  // parametro por default 
+    return 2*x; 
+}
 
 /*EXPRESION FUNCION */
 var doble1 = function(x){ return 2*x; }
@@ -20,24 +24,11 @@ function funcRetorna (x){
     }
 }
 
-/*PRUEBA DE PARAMETROS */
-function adornar(ad,pal,...resto){
-    var extra ='';
-    console.log('\tparametros-> ',arguments);
-    console.log('\targuments[0]: ',arguments[0]);
-    resto.forEach(e => { extra +=e+' '   });
-    return '->'+ad+' '+pal+' '+extra+' '+ad+'<-'
-}
-
-console.log(doble0(33.25));
 console.log(doble1(7.14));
 console.log(sumatoria1(4));
 console.log(sumatoria2(4));
 
 const f1 = funcRetorna('pepin');
-
-//console.log(adornar('***','CESAR','kachu','tito','micho'));
-//console.log(adornar('***'));
 
 const inicia = ()=>{setInterval(f1,1000);}
 inicia();
