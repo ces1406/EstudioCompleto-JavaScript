@@ -14,3 +14,19 @@ console.log('var1==var1', var1==var1);
 console.log('var1===var1', var1===var1);
 console.log('var2==var2', var2==var2);
 console.log('var2===var2', var2===var2);
+
+/*
+ * NOTAS: 
+ */
+var a;
+var a; //NO DA ERROR
+console.log('typeof a: ',typeof a);
+console.log('typeof z: ',typeof z);
+
+let b;
+// let b;   // DA ERROR
+
+// const d; // DA ERROR
+
+const c={};
+c.nombre = "juan";
