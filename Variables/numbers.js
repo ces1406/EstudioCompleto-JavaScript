@@ -24,7 +24,7 @@ console.log('parseInt(n1) =',parseInt(n1));
 console.log('parseFloat(n1) =',parseFloat(n1));
 
 console.log("\x1b[32m%s\x1b[0m", '-------------------------------------------------------------------');
-var o1 = 071;
+var o1 = 0o71;
 console.log('octales: console.log(071) =',o1,' (lo muestra en sistema decimal)');
 console.log('hexadecimales: console.log(0xA) =',0xA,' (lo muestra en sistema decimal)');
 console.log('binarios: console.log(0b0101) =',0b0101,' (lo muestra en sistema decimal)');
